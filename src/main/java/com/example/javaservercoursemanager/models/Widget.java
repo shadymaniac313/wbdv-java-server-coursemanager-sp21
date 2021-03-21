@@ -121,6 +121,21 @@ public class Widget {
     this.value = value;
   }
 
+  public Widget() {
+    this.name = "";
+    this.id = new Long(-1);
+    this.type = "";
+    this.widgetOrder = -1;
+    this.text = "";
+    this.url = "";
+    this.size = -1;
+    this.width = -1;
+    this.height = -1;
+    this.cssClass = "";
+    this.style = "";
+    this.value = "";
+  }
+
   public Widget(String name, Long id, String type, Integer widgetOrder, String text,
     String url, Integer size, Integer width, Integer height, String cssClass, String style,
     String value) {
@@ -145,4 +160,5 @@ public class Widget {
     this.size = size;
     this.text = text;
   }
+
 }

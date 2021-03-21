@@ -14,18 +14,13 @@ public class WidgetService {
 
   {
     Widget w1 = new Widget(123l, "ABC123", "HEADING", 1, "Welcome to Widgets");
-    Widget w2 = new Widget(234l, "ABC234", "PARAGRAPH", 1, "This is a paragraph");
-    Widget w3 = new Widget(345l, "ABC234", "HEADING", 2, "Welcome to WebDev");
-    Widget w4 = new Widget(456l, "ABC234", "PARAGRAPH", 1, "Lorem ipsum");
     widgets.add(w1);
-    widgets.add(w2);
-    widgets.add(w3);
-    widgets.add(w4);
   }
 
   public Widget createWidget(String topicId, Widget widget) {
     Long id = (new Date()).getTime();
     widget.setId(id);
+    widget.setTopicId(topicId);
     this.widgets.add(widget);
     return widget;
   }
