@@ -14,7 +14,7 @@ public class WidgetService {
 
   {
     Widget w1 = new Widget(123l, "ABC123", "HEADING", 1, "Welcome to Widgets");
-    widgets.add(w1);
+    this.widgets.add(w1);
   }
 
   public Widget createWidget(String topicId, Widget widget) {
@@ -44,9 +44,10 @@ public class WidgetService {
   }
 
   public int updateWidget(Long id, Widget updatedWidget) {
+//    System.out.println(updatedWidget.toString());
     for (int i = 0; i < this.widgets.size(); i++) {
       Widget widget = widgets.get(i);
-      if (widget.getId() == id) {
+      if (widget.getId().equals(id)) {
         this.widgets.set(i, updatedWidget);
         return 1;
       }

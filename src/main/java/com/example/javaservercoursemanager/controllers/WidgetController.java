@@ -32,7 +32,7 @@ public class WidgetController {
   }
 
   @PutMapping("api/widgets/{widgetId}")
-  public int updateWidget(@PathVariable("widgetId") Long widgetId, Widget widget) {
+  public int updateWidget(@PathVariable("widgetId") Long widgetId, @RequestBody Widget widget) {
     return service.updateWidget(widgetId, widget);
   }
 

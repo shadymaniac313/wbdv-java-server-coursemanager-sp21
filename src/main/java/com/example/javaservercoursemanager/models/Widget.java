@@ -122,26 +122,16 @@ public class Widget {
   }
 
   public Widget() {
-    this.name = "";
     this.id = new Long(-1);
-    this.type = "";
-    this.widgetOrder = -1;
-    this.text = "";
-    this.url = "";
-    this.size = -1;
-    this.width = -1;
-    this.height = -1;
-    this.cssClass = "";
-    this.style = "";
-    this.value = "";
   }
 
-  public Widget(String name, Long id, String type, Integer widgetOrder, String text,
+  public Widget(String name, Long id, String type, String topicId, Integer widgetOrder, String text,
     String url, Integer size, Integer width, Integer height, String cssClass, String style,
     String value) {
     this.name = name;
     this.id = id;
     this.type = type;
+    this.topicId = topicId;
     this.widgetOrder = widgetOrder;
     this.text = text;
     this.url = url;
@@ -161,4 +151,22 @@ public class Widget {
     this.text = text;
   }
 
+  @Override
+  public String toString() {
+    return "Widget{" +
+      "name='" + name + '\'' +
+      ", id=" + id +
+      ", type='" + type + '\'' +
+      ", topicId='" + topicId + '\'' +
+      ", widgetOrder=" + widgetOrder +
+      ", text='" + text + '\'' +
+      ", url='" + url + '\'' +
+      ", size=" + size +
+      ", width=" + width +
+      ", height=" + height +
+      ", cssClass='" + cssClass + '\'' +
+      ", style='" + style + '\'' +
+      ", value='" + value + '\'' +
+      '}';
+  }
 }
