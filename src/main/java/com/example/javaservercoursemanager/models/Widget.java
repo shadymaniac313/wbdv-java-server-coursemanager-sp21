@@ -44,6 +44,11 @@ public class Widget {
     return topicId;
   }
 
+
+  public void setTopicId(String topicId) {
+    this.topicId = topicId;
+  }
+
   public Integer getWidgetOrder() {
     return widgetOrder;
   }
