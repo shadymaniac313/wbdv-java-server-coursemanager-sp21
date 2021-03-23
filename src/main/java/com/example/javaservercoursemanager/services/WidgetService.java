@@ -13,10 +13,10 @@ public class WidgetService {
   private List<Widget> widgets = new ArrayList<>();
 
   {
-    Widget w1 = new Widget(123l, "ABC123", "HEADING", 1, "Welcome to Widgets");
-    Widget w2 = new Widget(Long.parseLong("1616490328369"), "6058e8c5d0251e0017944156", "HEADING",
+    Widget placeholderWidget = new Widget(123l, "ABC123", "HEADING", 1, "Welcome to Widgets");
+    Widget mainTitle = new Widget(Long.parseLong("1616490328369"), "6058e8c5d0251e0017944156", "HEADING",
       1, "Welcome to NodeJS!");
-    Widget w3 = new Widget(Long.parseLong("1616490353516"), "6058e8c5d0251e0017944156",
+    Widget mainTitleDescription = new Widget(Long.parseLong("1616490353516"), "6058e8c5d0251e0017944156",
       "PARAGRAPH", 1,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas "
         + "vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum "
@@ -26,9 +26,9 @@ public class WidgetService {
         + "Impedit sit sunt quaerat, odit, tenetur error, harum nesciunt ipsum debitis quas "
         + "aliquid. Reprehenderit, quia. Quo neque error repudiandae fuga? Ipsa laudantium "
         + "molestias eos  sapiente officiis modi at sunt excepturi expedita sint?");
-    Widget w4 = new Widget(Long.parseLong("1616490386292"), "6058e8c5d0251e0017944156", "HEADING"
+    Widget sectionHeading = new Widget(Long.parseLong("1616490386292"), "6058e8c5d0251e0017944156", "HEADING"
       , 1, "Section 1");
-    Widget w5 = new Widget(Long.parseLong("1616490402243"), "6058e8c5d0251e0017944156",
+    Widget sectionDescription = new Widget(Long.parseLong("1616490402243"), "6058e8c5d0251e0017944156",
       "PARAGRAPH", 1,
       "Sed quibusdam recusandae alias error harum maxime adipisci amet laborum. Perspiciatis  "
         + "minima nesciunt dolorem! Officiis iure rerum voluptates a cumque velit  quibusdam sed "
@@ -38,7 +38,11 @@ public class WidgetService {
         + "similique ad  earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo"
         + "  fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore  suscipit"
         + " quas? Nulla, placeat.");
-    this.widgets.add(w1);
+    this.widgets.add(placeholderWidget);
+    this.widgets.add(mainTitle);
+    this.widgets.add(mainTitleDescription);
+    this.widgets.add(sectionHeading);
+    this.widgets.add(sectionDescription);
   }
 
   public Widget createWidget(String topicId, Widget widget) {
