@@ -162,6 +162,22 @@ public class Widget {
     this.text = text;
   }
 
+  public Widget(Widget copy) {
+    this.setId(copy.getId());
+    this.setTopicId(copy.getTopicId());
+    this.setText(copy.getText());
+    this.setCssClass(copy.getCssClass());
+    this.setHeight(copy.getHeight());
+    this.setName(copy.getName());
+    this.setSize(copy.getSize());
+    this.setStyle(copy.getStyle());
+    this.setUrl(copy.getUrl());
+    this.setType(copy.getType());
+    this.setValue(copy.getValue());
+    this.setWidgetOrder(copy.getWidgetOrder());
+    this.setWidth(copy.getWidth());
+  }
+
   @Override
   public String toString() {
     return "Widget{" +
