@@ -38,6 +38,7 @@ public class WidgetService {
     toBeEdited.setHeight(updatedWidget.getHeight());
     toBeEdited.setUrl(updatedWidget.getUrl());
     toBeEdited.setWidgetOrder(updatedWidget.getWidgetOrder());
+    toBeEdited.setValue(updatedWidget.getValue());
     repository.save(toBeEdited);
     return 1;
   }
