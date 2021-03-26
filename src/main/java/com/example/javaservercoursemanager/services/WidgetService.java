@@ -34,6 +34,10 @@ public class WidgetService {
     toBeEdited.setText(updatedWidget.getText());
     toBeEdited.setType(updatedWidget.getType());
     toBeEdited.setSize(updatedWidget.getSize());
+    toBeEdited.setWidth(updatedWidget.getWidth());
+    toBeEdited.setHeight(updatedWidget.getHeight());
+    toBeEdited.setUrl(updatedWidget.getUrl());
+    toBeEdited.setWidgetOrder(updatedWidget.getWidgetOrder());
     repository.save(toBeEdited);
     return 1;
   }

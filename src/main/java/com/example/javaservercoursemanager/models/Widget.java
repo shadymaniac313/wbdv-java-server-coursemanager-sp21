@@ -154,6 +154,19 @@ public class Widget {
     this.value = value;
   }
 
+  public Widget(Long id, String topicId, String type, Integer size, String text, int width,
+    int height, String url, Integer widgetOrder) {
+    this.id = id;
+    this.topicId = topicId;
+    this.type = type;
+    this.size = size;
+    this.text = text;
+    this.height = height;
+    this.width = width;
+    this.url = url;
+    this.widgetOrder = widgetOrder;
+  }
+
   public Widget(Long id, String topicId, String type, Integer size, String text) {
     this.id = id;
     this.topicId = topicId;
